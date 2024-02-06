@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    
+    <input type="text" id="nickname" placeholder="nickname">
+    <input type="text"  id="lname" placeholder="lname" >
+    <input type="text"  id="bday" placeholder="bday" >
+    <button onclick="showAlert()">SUbmit</button>
+
+</body>
+    
+    <script>
+        function showAlert() {
+    var username = document.getElementById("nickname").value;
+    var password = document.getElementById("lname").value;
+    var weight = document.getElementById("bday").value;
+    var age = (2024-weight) ; 
+
+    if (username && password) {
+        alert("Hello " + username +" "+ password +"! " + "How does it feel to be " + age+ " years old?");
+    } else {
+        alert("Please enter both username and password.");
+    }
+}
+
+    </script>
+
+</html>
